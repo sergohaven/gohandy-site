@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Handy · בקרוב</title>
+<meta name="description" content="Handy — פלטפורמת חיבור בין בעלי בתים לבעלי מקצוע בתל אביב. בקרוב." />
+<meta name="robots" content="index,follow" />
+<link rel="icon" href="/assets/favicon.png" />
+<link rel="apple-touch-icon" href="/assets/logo.png" />
+<meta property="og:title" content="Handy · בקרוב" />
+<meta property="og:description" content="פלטפורמת חיבור בין בעלי בתים לבעלי מקצוע בתל אביב." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f7f5f1; --ink:#1b1a17; --muted:#7a746a; --line:#e5e0d6; --chip:#efeae1;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111110; --ink:#f3f0ea; --muted:#9c958a; --line:#2a2824; --chip:#201f1d; }
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in oklab, var(--chip) 55%, transparent) 0%, transparent 60%),
+    var(--bg);
+  color:var(--ink);
+  font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:100svh;padding:32px 22px;text-align:center;}
+.logo{width:104px;height:104px;border-radius:26px;box-shadow:0 12px 40px rgba(0,0,0,.14);
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) both;}
+.brand{font-size:20px;font-weight:700;letter-spacing:.01em;margin:20px 0 0;
+  animation:rise .7s .05s cubic-bezier(.2,.7,.2,1) both;}
+h1{font-size:clamp(34px,9vw,52px);font-weight:800;letter-spacing:-.03em;margin:10px 0 0;
+  animation:rise .7s .1s cubic-bezier(.2,.7,.2,1) both;}
+.tag{color:var(--muted);font-size:clamp(15px,4.2vw,17px);max-width:26ch;margin:14px 0 0;line-height:1.6;
+  animation:rise .7s .16s cubic-bezier(.2,.7,.2,1) both;}
+.cta{margin-top:30px;animation:rise .7s .22s cubic-bezier(.2,.7,.2,1) both;}
+.cta a{display:inline-block;color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;
+  padding:11px 20px;border:1px solid var(--line);border-radius:999px;background:transparent;
+  transition:background .18s,transform .18s;}
+.cta a:hover{background:var(--chip);}
+.cta a:active{transform:scale(.98);}
+.mail{margin-top:16px;font-size:13px;color:var(--muted);
+  animation:rise .7s .28s cubic-bezier(.2,.7,.2,1) both;}
+.mail a{color:var(--muted);text-decoration:none;}
+.mail a:hover{color:var(--ink);}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <img class="logo" src="/assets/logo.png" alt="Handy" />
+  <p class="brand">Handy</p>
+  <h1>בקרוב</h1>
+  <p class="tag">פלטפורמת החיבור בין בעלי בתים לבעלי מקצוע — בתל אביב.</p>
+  <p class="cta"><a href="/legal.html">תנאי שימוש ומדיניות פרטיות</a></p>
+  <p class="mail"><a href="mailto:sergeyhavenson@gmail.com">sergeyhavenson@gmail.com</a></p>
+</body>
+</html>
